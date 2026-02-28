@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <h1>Find a Dog Breed</h1>
+
+<form id="dog-form">
+    <div>
+        <label for="breedName">Breed Name:</label>
+        <!-- Added name attribute so JavaScript FormData can read it -->
+        <input type="text" id="breedName" name="breedName" placeholder="Enter breed name">
+    </div>
+
+    <div>
+        <label for="temperament">Temperament:</label>
+        <select id="temperament" name="temperament">
+            <option value="">--Select Temperament--</option>
+            <option value="Playful">Playful</option>
+            <option value="Friendly">Friendly</option>
+            <option value="Energetic">Energetic</option>
+            <option value="Loyal">Loyal</option>
+            <option value="Protective">Protective</option>
+            <option value="Intelligent">Intelligent</option>
+            <option value="Affectionate">Affectionate</option>
+            <option value="Work-focused">Work-focused</option>
+        </select>
+    </div>
+
+    <button type="submit">Search</button>
+</form>
+
+<!-- Results container -->
+<div id="dog-container"></div>
+
+<script src="javascript/index.js"></script>
+
+</body>
+</html>
