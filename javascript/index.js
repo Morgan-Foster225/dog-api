@@ -98,7 +98,7 @@ function showDogs(dogs) {
 
         card.innerHTML = `
           <img src="${imageUrl}" alt="${dog.name}">
-          <div class="dog-name">${dog.name}</div>
+          <div class="dog-name"><strong>${dog.name}</strong></div>
           <div><strong>Life Span:</strong> ${dog.life_span || "Unknown"}</div>
           <div><strong>Temperament:</strong> ${dog.temperament || "Unknown"}</div>
         `;
